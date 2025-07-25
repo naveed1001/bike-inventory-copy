@@ -30,6 +30,14 @@ const shipment = require('./shipment');
 const entityBanking = require('./entity_banking');
 const itemTransfers = require('./item_transfers');
 
+// Health check endpoint
+router.get('/health', (req, res) => {
+    res.status(200).json({ 
+        status: 'OK', 
+        timestamp: new Date().toISOString(),
+        service: 'bike-inventory-api'
+    });
+});
 
 router.use('/roles', roles.router);
 router.use('/permissions', permissions.router);
