@@ -25,10 +25,3 @@ npm-debug.log
 # Test coverage and debug files
 coverage
 .nyc_output
-
-# Docker-related files (optional, if not needed in build context)
-.dockerignore
-Dockerfile
-
-# Documentation (optional)
-README.md
