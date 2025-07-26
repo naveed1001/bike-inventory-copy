@@ -13,7 +13,7 @@ RUN apk add --no-cache git
 COPY package*.json ./
 
 # Install only production dependencies
-RUN npm ci --omit=dev && npm cache clean --force
+RUN npm install --omit=dev && npm cache clean --force
 
 # =======================
 # Production Stage
