@@ -1,5 +1,3 @@
-version: '3.8'  # Docker Compose file format version
-
 services:
   app:
     build: .  # Builds the image from the Dockerfile in the current directory
